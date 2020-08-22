@@ -1,16 +1,7 @@
-total_amount = int(input())
+total_amount = int(input('合計金額を入れてね>'))
+total_number_of_people = int(input('合計人数を入れてね>'))
 
-total_number_of_people = int(input())
+amount_per_person = total_amount // total_number_of_people
+fraction = total_amount % total_number_of_people
 
-print(total_amount)
-
-print(total_number_of_people)
-
-amount_per_person = total_amount / total_number_of_people
-
-print(amount_per_person)
-
-fraction = total_amount%total_number_of_people
-
-print(fraction)
-
+print(f'一人あたりの金額は{amount_per_person}円です｡\n端数は{fraction}円です｡')
